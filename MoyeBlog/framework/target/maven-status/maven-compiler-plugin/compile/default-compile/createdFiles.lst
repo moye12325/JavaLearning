@@ -1,0 +1,4 @@
+com\moye\service\ArticleService.class
+com\moye\mapper\ArticleMapper.class
+com\moye\service\impl\ArticleServiceImpl.class
+com\moye\domain\entity\Article.class
