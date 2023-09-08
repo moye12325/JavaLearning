@@ -1,5 +1,6 @@
 package com.moye.controller;
 
+import com.moye.domain.ResponseResult;
 import com.moye.domain.entity.Article;
 import com.moye.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +16,14 @@ public class ArticleController {
     @Autowired
     private ArticleService articleService;
 
-    @GetMapping("/list")
-    private List<Article> test() {
-        return articleService.list();
+//    @GetMapping("/list")
+//    private List<Article> test() {
+//        return articleService.list();
+//    }
+
+    @GetMapping("hotArticleList")
+    public ResponseResult hotArticleList() {
+        ResponseResult result = articleService.hotArticleList();
+        return result;
     }
 }
