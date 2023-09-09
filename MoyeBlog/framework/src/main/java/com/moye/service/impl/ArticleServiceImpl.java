@@ -22,7 +22,7 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
 //        最多只能查询十条
         queryWrapper.eq(Article::getStatus, 0);
         queryWrapper.orderByDesc(Article::getViewCount);
-        Page<Article> page = new Page(1, 0);
+        Page<Article> page = new Page(1, 10);
         page(page, queryWrapper);
         List<Article> articles = page.getRecords();
 
