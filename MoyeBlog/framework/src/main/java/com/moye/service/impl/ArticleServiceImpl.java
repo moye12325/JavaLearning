@@ -5,10 +5,13 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.moye.domain.ResponseResult;
 import com.moye.domain.entity.Article;
+import com.moye.domain.vo.HotArticleVo;
 import com.moye.mapper.ArticleMapper;
 import com.moye.service.ArticleService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -26,6 +29,16 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
         page(page, queryWrapper);
         List<Article> articles = page.getRecords();
 
-        return ResponseResult.okResult(articles);
+//        bean拷贝
+        List<HotArticleVo> articleVos = new ArrayList<>();
+        for (Article article : articles) {
+            HotArticleVo vo = new HotArticleVo();
+            BeanUtils.copyProperties(article, vo);
+            articleVos.add(vo);
+        }
+
+
+
+        return ResponseResult.okResult(articleVos);
     }
 }
