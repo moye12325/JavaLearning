@@ -1,4 +1,11 @@
-com\moye\service\ArticleService.class
+com\moye\domain\entity\Category.class
+com\moye\mapper\CategoryMapper.class
+com\moye\domain\vo\ArticleListVo.class
+com\moye\service\impl\CategoryServiceImpl.class
+com\moye\service\CategoryService.class
+com\moye\domain\vo\CategoryVo.class
 com\moye\mapper\ArticleMapper.class
 com\moye\service\impl\ArticleServiceImpl.class
+com\moye\service\ArticleService.class
+com\moye\domain\vo\PageVo.class
 com\moye\domain\entity\Article.class
