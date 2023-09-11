@@ -1,3 +1,6 @@
+com\moye\config\SecurityConfig.class
 com\moye\controller\CategoryController.class
+com\moye\controller\BlogLoginController.class
+com\moye\controller\LinkController.class
 com\moye\controller\ArticleController.class
 com\moye\MoyeBlogApplication.class
