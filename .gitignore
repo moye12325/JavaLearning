@@ -3,3 +3,7 @@
 /MoyeBlog/framework/target/classes/com/moye/domain/entity/LoginUser.class
 /MoyeBlog/framework/target/classes/com/moye/service/impl/UserDetailsServiceImpl.class
 /MoyeBlog/framework/target/classes/com/moye/domain/vo/UserInfoVo.class
+/out/
+/MoyeBlog/com.admin/target/
+/MoyeBlog/com.blog/target/
+/MoyeBlog/framework/target/

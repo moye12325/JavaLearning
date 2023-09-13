@@ -6,6 +6,7 @@ com\moye\mapper\UserMapper.class
 com\moye\config\RedisConfig.class
 com\moye\service\impl\CategoryServiceImpl.class
 com\moye\domain\entity\User.class
+com\moye\exception\SystemException.class
 com\moye\mapper\ArticleMapper.class
 com\moye\service\impl\LinkServiceImpl.class
 com\moye\service\ArticleService.class
@@ -25,5 +26,6 @@ com\moye\service\CategoryService.class
 com\moye\domain\vo\CategoryVo.class
 com\moye\config\FastJsonRedisSerializer.class
 com\moye\service\impl\ArticleServiceImpl.class
+com\moye\handler\exception\GlobalExceptionHandler.class
 com\moye\domain\entity\Article.class
 com\moye\domain\vo\LinkVo.class
