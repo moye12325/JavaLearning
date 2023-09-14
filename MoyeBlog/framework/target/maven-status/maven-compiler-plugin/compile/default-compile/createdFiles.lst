@@ -1,5 +1,6 @@
 com\moye\domain\entity\Link.class
 com\moye\utils\WebUtils.class
+com\moye\service\UserService.class
 com\moye\domain\vo\UserInfoVo.class
 com\moye\domain\vo\ArticleListVo.class
 com\moye\mapper\UserMapper.class
@@ -12,6 +13,7 @@ com\moye\service\impl\LinkServiceImpl.class
 com\moye\service\ArticleService.class
 com\moye\domain\vo\PageVo.class
 com\moye\mapper\LinkMapper.class
+com\moye\service\impl\UserServiceImpl.class
 com\moye\service\LinkService.class
 com\moye\domain\entity\Category.class
 com\moye\domain\vo\BlogUserLoginVo.class

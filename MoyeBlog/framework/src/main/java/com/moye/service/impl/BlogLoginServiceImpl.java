@@ -29,8 +29,8 @@ public class BlogLoginServiceImpl implements BlogLoginService {
         //获取token，然后解析token值获取其中的userid。SecurityContextHolder是security官方提供的类
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         LoginUser loginUser = (LoginUser) authentication.getPrincipal();
-        //LoginUser是我们写的类
-        //获取userid
+
+        //获取use        //LoginUser是我们写的类rid
         Long userId = loginUser.getUser().getId();
         //在redis根据key来删除用户的value值，注意之前我们在存key的时候，key是加了'bloglogin:'前缀
         redisCache.deleteObject("bloglogin:" + userId);
