@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -30,5 +31,7 @@ public class CommentVo {
     private Date createTime;
     //评论是谁发的
     private String username;
+
+    private List<CommentVo> children;
 
 }
